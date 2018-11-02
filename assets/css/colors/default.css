@@ -15,7 +15,7 @@ a:hover {
 }
 
 .back-to-top i {
-    background-color: #e91e63
+    background-color: #e0bccd
 }
 
 #roof {
@@ -23,20 +23,20 @@ a:hover {
 }
 
 .slicknav_btn {
-    border-color: #e91e63;
+    border-color: #e0bccd;
     border-radius: 2px
 }
 
 .slicknav_menu .slicknav_btn .slicknav_icon-bar {
-    background: #e91e63
+    background: #e0bccd
 }
 
 .slicknav_menu .slicknav_btn:hover {
-    background: #e91e63
+    background: #e0bccd
 }
 
 .slicknav_nav .active a {
-    background: #e91e63
+    background: #e0bccd
 }
 
 .slicknav_nav a:hover,
@@ -68,7 +68,7 @@ a:hover {
 }
 
 .navbar-event .dropdown .dropdown-menu>li.active>a {
-    background: #e91e63!important;
+    background: #ffdebf!important;
     color: #fff
 }
 

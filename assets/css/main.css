@@ -1,13 +1,29 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700';
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/CenturyGothic.eot");
+    src: 
+    url("../fonts/CenturyGothic.woff") format("woff"),
+    url("../fonts/CenturyGothic.woff2") format("woff2"),
+    url("../fonts/CenturyGothic.svg") format("svg"),
+    url("../fonts/CenturyGothic.ttf") format("ttf");
+    }
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: url("../fonts/HelveticaNeueBold.eot");
+    src: 
+    url("../fonts/HelveticaNeueBold.woff") format("woff"),
+    url("../fonts/HelveticaNeueBold.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueBold.svg") format("svg"),
+    url("../fonts/HelveticaNeueBold.ttf") format("ttf");
+    }
 body {
     font-size: 15px;
-    font-family: roboto, sans-serif;
+    font-family: Arial,Helvetica,sans-serif;
     font-weight: 400;
     color: #777;
     margin: 0;
     line-height: 25px;
-    background: url(../img/bg.jpg) no-repeat;
-    height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,14 +41,19 @@ h5,
 h6 {
     font-family: open sans, sans-serif;
     color: #2d2d2d;
-    font-weight: 700
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Century Gothic', sans-serif;
 }
 
 p {
     color: #fff;
     font-size: 14px;
-    font-family: roboto, sans-serif;
-    font-weight: 400
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    text-shadow: 3px 3px 8px rgba(0,0,0,1);
 }
 
 a {
@@ -178,7 +199,7 @@ fieldset[disabled] .btn {
     width: 40px;
     font-size: 20px;
     height: 40px;
-    background: #e91e63;
+    background: #e0bccd;
     color: #fff;
     text-align: center;
     box-shadow: 0 6px 13px rgba(0, 0, 0, .08);
@@ -376,7 +397,7 @@ fieldset[disabled] .btn {
 }
 
 .navbar-event {
-    background: #24122a
+    background: rgba(50, 13, 41, 1)
 }
 
 .navbar-event .navbar-nav li a {
@@ -557,7 +578,7 @@ fieldset[disabled] .btn {
 }
 
 #carousel-area .carousel-inner .item .carousel-caption {
-    top: 22%;
+    top: 11%;
     right: 10%;
     left: 10%
 }
@@ -1327,14 +1348,14 @@ h1 {
 }
 
 .social-icon .social i {
-    color: #777;
+    color: rgba(50, 13, 41, 1);
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     margin-right: 2px;
     font-size: 14px;
     width: 32px;
     height: 32px;
-    border-radius: 0;
+    border-radius: 50px;
     line-height: 32px;
     text-align: center;
     -webkit-transition: all .2s linear;
@@ -1347,19 +1368,19 @@ h1 {
     color: #3b5998
 }
 
-.social-icon a .fa-twitter:hover {
-    color: #00aced
+.social-icon a .fa-instagram:hover {
+    color: #ea4c89
 }
 
 .social-icon a .fa-linkedin:hover {
     color: #007bb6
 }
 
-.social-icon a .fa-dribbble:hover {
-    color: #ea4c89
+.social-icon a .fa-youtube-play:hover {
+    color: red
 }
 
-.social-icon a .fa-behance:hover {
+.social-icon a .fa-twitter:hover {
     color: #42c0fb
 }
 
@@ -2613,3 +2634,186 @@ blockquote .quote-text {
     box-shadow: 0 6px 15px rgba(0, 0, 0, .14);
     outline: none
 }
+
+.ribbon {
+    font-size: 25px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+   
+    width: 70%;
+       
+    position: relative;
+    background: #fed000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em 0em 2em; /* Adjust to suit */
+    margin: 0 auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+   }
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #fed000;
+    z-index: -1;
+   }
+   .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+   }
+   .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #fcc100 transparent transparent transparent;
+    bottom: -1em;
+   }
+   .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+   }
+   .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+   }
+   
+   .timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+  }
+  
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  
+  .timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    background: url("../img/awan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    position: relative;
+   
+  }
+  
+  
+  .timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  
+  .timeline-badge.primary {
+    background-color: #2e6da4 !important;
+  }
+  
+  .timeline-badge.success {
+    background-color: #3f903f !important;
+  }
+  
+  .timeline-badge.warning {
+    background-color: #FFA04E!important;
+  }
+  
+  .timeline-badge.danger {
+    background-color: #d9534f !important;
+  }
+  
+  .timeline-badge.info {
+    background-color: #5bc0de !important;
+  }
+  
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+  
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+
+  .panel{
+    background-color: transparent;
+  }
+  .panel-default{
+      border-color: transparent;
+  }
+
+  
